@@ -1,14 +1,28 @@
 /*
-Syntax error: Undefined variable: "$greyshade".
-        on line 14 of /Users/davidkozlwoski/Documents/projects/octopress/sass/_greyshade.scss
-        from line 8 of /Users/davidkozlwoski/Documents/projects/octopress/sass/screen.scss
+Syntax error: Undefined variable: "$img-border".
+        on line 9 of /Users/davidkozlwoski/Documents/projects/octopress/sass/custom/_styles.scss
+        from line 12 of /Users/davidkozlwoski/Documents/projects/octopress/sass/screen.scss
 
 Backtrace:
-/Users/davidkozlwoski/Documents/projects/octopress/sass/_greyshade.scss:14
-/Users/davidkozlwoski/Documents/projects/octopress/sass/screen.scss:8
+/Users/davidkozlwoski/Documents/projects/octopress/sass/custom/_styles.scss:9
+/Users/davidkozlwoski/Documents/projects/octopress/sass/screen.scss:12
 /Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
 /Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `block in _perform'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `map'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `_perform'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
 /Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/davidkozlwoski/.rvm/gems/ruby-1.9.3-p448@gh-pages/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -67,4 +81,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$greyshade\".\A         on line 14 of /Users/davidkozlwoski/Documents/projects/octopress/sass/_greyshade.scss\A         from line 8 of /Users/davidkozlwoski/Documents/projects/octopress/sass/screen.scss"; }
+  content: "Syntax error: Undefined variable: \"$img-border\".\A         on line 9 of /Users/davidkozlwoski/Documents/projects/octopress/sass/custom/_styles.scss\A         from line 12 of /Users/davidkozlwoski/Documents/projects/octopress/sass/screen.scss"; }
