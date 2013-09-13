@@ -4,7 +4,7 @@
   <title><![CDATA[Giggle Glide]]></title>
   <link href="http://giggleglide.com/atom.xml" rel="self"/>
   <link href="http://giggleglide.com/"/>
-  <updated>2013-09-13T22:41:11+02:00</updated>
+  <updated>2013-09-13T23:00:58+02:00</updated>
   <id>http://giggleglide.com/</id>
   <author>
     <name><![CDATA[Giggle Glide]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test post]]></title>
+    <link href="http://giggleglide.com/blog/test-post/"/>
+    <updated>2013-09-13T23:00:00+02:00</updated>
+    <id>http://giggleglide.com/blog/test-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[test]]></title>
