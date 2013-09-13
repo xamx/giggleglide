@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://xamx.github.io/giggleglide/atom.xml" rel="self"/>
-  <link href="http://xamx.github.io/giggleglide/"/>
-  <updated>2013-09-13T02:32:25+02:00</updated>
-  <id>http://xamx.github.io/giggleglide/</id>
+  <title><![CDATA[Giggle Glide]]></title>
+  <link href="http://giggleglide.com/atom.xml" rel="self"/>
+  <link href="http://giggleglide.com/"/>
+  <updated>2013-09-13T02:37:18+02:00</updated>
+  <id>http://giggleglide.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[test]]></title>
-    <link href="http://xamx.github.io/giggleglide/blog/2013/09/13/test/"/>
+    <link href="http://giggleglide.com/blog/2013/09/13/test/"/>
     <updated>2013-09-13T01:36:00+02:00</updated>
-    <id>http://xamx.github.io/giggleglide/blog/2013/09/13/test</id>
+    <id>http://giggleglide.com/blog/2013/09/13/test</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
