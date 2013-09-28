@@ -1,0 +1,284 @@
+/*imports*/ 
+@import "normalize";
+@import "fluid_skeleton";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700);
+@import "font-awesome";
+
+html {
+	font: 100%/1.5em 'PT Sans', sans-serif;
+}
+
+body {
+	font-size: 1em; /* 16px / 16px */
+	color: #353738;
+  background: #1dc268;
+
+}
+
+hr {
+	margin: 1em 0;
+	height: 1px;
+	background: transparent;
+	border: none;
+	width: 100%;
+	clear: both;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.icon-circle-arrow-down{
+        color:#efefef;
+        text-decoration:none;
+        opacity:0.5;
+}
+
+.icon-circle-arrow-down:hover{
+        color:#dfdff;
+}
+
+.icon-facebook-sign{
+        color:#efefef;
+        text-decoration:none;
+        opacity:0.5;
+}
+
+.icon-facebook-sign:hover{
+        color:#dfdff;
+}
+
+.icon-twitter-sign{
+        color:#efefef;
+        text-decoration:none;
+        opacity:0.5;
+}
+
+.icon-twitter-sign:hover{
+        color:#dfdff;
+}
+
+div.band .columns {
+	padding-top: 2em;
+	padding-bottom:2em;
+}
+
+header.band {
+	color: white;
+	text-align: center;
+  height:100%;
+  -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#stars {
+	background: url("../stars.png") bottom repeat-x;
+  //height:100%;
+ //background-size: 60%;
+
+}
+
+#back_hills {
+	background: url("../hills_back.png") bottom repeat-x;
+	color: white;
+	text-align: center;
+  height:100%;
+ background-size: 60%;
+}
+
+#front {
+	background: url("../path3027.png") bottom repeat-x;
+  height:100%;
+  background-size: 60%;
+}
+
+#back_clouds {
+	background: url("../clouds_back.png") top repeat-x;
+   background-size: 11%;
+
+}
+#front_clouds {
+	background: url("../clouds_front.png") top repeat-x;
+  padding: 5% 0 0 0;
+   background-size: 11%;
+}
+
+
+h1, h2, h3 {
+	font-weight: 700;
+	text-align: center;
+}
+
+#sign_up_container{
+        text-align:center;
+}
+
+.email{
+        width:80%
+
+}
+
+#mc-embedded-subscribe{
+        margin-top:1em;
+}
+
+.copyright{
+        color:#fff;
+}
+
+#logo{
+        background-size:100%;
+}
+
+@media only screen and (max-width: 767px) { 
+#logo{
+        background: url("../giggle_glide_logo_mobile.png") no-repeat center;
+        height: 9em;
+}
+}
+
+header.band h1 {
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size: 1.6em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+h3 {
+	font-size: 1.1em;font-weight: 700;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+a.button {
+	background: #dd21c6;
+	text-align: center;
+	padding: .5em 1em;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+  border: none !important;
+		
+	/*transition cross-browser stuff*/
+	-webkit-transition: background 0.2s ease-out;  /* Safari 3.2+, Chrome */
+	-moz-transition: background 0.2s ease-out;  /* Firefox 4-15 */
+  -o-transition: background 0.2s ease-out; /* Opera 10.512.00 */
+  transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+a.button:hover {
+	background: #901581;
+}
+
+.button {
+	background: #dd21c6;
+	text-align: center;
+	padding: .5em 1em;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+  border: none !important;
+		
+	/*transition cross-browser stuff*/
+	-webkit-transition: background 0.2s ease-out;  /* Safari 3.2+, Chrome */
+	-moz-transition: background 0.2s ease-out;  /* Firefox 4-15 */
+  -o-transition: background 0.2s ease-out; /* Opera 10.512.00 */
+  transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+.button:hover {
+	background: #901581;
+}
+
+footer {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.last a {
+	margin: 0 1em;	
+}
+
+#arrow_container{
+        padding-top:50%;
+}
+
+.social-tuts {
+	color: #E36316;
+}
+
+.social-dribbble {
+	color: #c5376d;
+}
+
+.social-facebook {
+	color: #3B5998;
+}
+
+.main_block{
+background-color: rgb(33,104,134);
+box-shadow: 6px 6px 3px #0f4462;
+color: white;
+}
+
+.hasPlaceholder {
+	color: #777;
+}
+
+/*as we don't haver many media queries, we'll stick them all here*/
+@media only screen and (min-width: 767px) { 
+	
+	body {
+		font-size: 1.125em; /* 18px / 16px */
+		line-height: 1.7em;
+	}
+	
+	div.band .columns {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	header.band {
+		
+	}
+  
+  #front {
+		
+	}
+	
+  #logo{
+        background: url("../giggle_glide_logo.png") no-repeat center;
+        height: 9em;
+  }
+
+	header.band h1 {
+		font-size: 3.25em; /*52 / 16*/
+	}
+	
+	a.button {
+		padding: .75em 1.5em;
+	}
+	
+	footer {
+		text-align: left;
+	}
+
+	.last {
+		text-align: right;
+	}
+
+}
