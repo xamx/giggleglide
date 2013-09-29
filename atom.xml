@@ -4,7 +4,7 @@
   <title><![CDATA[Giggle Glide]]></title>
   <link href="http://giggleglide.com/atom.xml" rel="self"/>
   <link href="http://giggleglide.com/"/>
-  <updated>2013-09-29T16:34:29+02:00</updated>
+  <updated>2013-09-29T16:37:36+02:00</updated>
   <id>http://giggleglide.com/</id>
   <author>
     <name><![CDATA[Giggle Glide]]></name>
@@ -18,15 +18,6 @@
     <link href="http://giggleglide.com/blog/test-post/"/>
     <updated>2013-09-13T23:00:00+02:00</updated>
     <id>http://giggleglide.com/blog/test-post</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[test]]></title>
-    <link href="http://giggleglide.com/blog/test/"/>
-    <updated>2013-09-13T01:36:00+02:00</updated>
-    <id>http://giggleglide.com/blog/test</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
