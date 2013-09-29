@@ -1986,8 +1986,7 @@ html {
   font: 100%/1.5em 'PT Sans', sans-serif; }
 
 body {
-  font-size: 1em;
-  /* 16px / 16px */
+  font-size: 0.8em;
   color: #353738;
   background: #1dc268; }
 
@@ -2002,16 +2001,13 @@ hr {
 a, a:visited {
   text-decoration: none; }
 
-a:hover {
-  text-decoration: underline; }
-
 .icon-circle-arrow-down {
   color: #efefef;
   text-decoration: none;
   opacity: 0.5; }
 
 .icon-circle-arrow-down:hover {
-  color: #dfdff; }
+  color: #dfdfdf; }
 
 .icon-facebook-sign {
   color: #efefef;
@@ -2019,7 +2015,7 @@ a:hover {
   opacity: 0.5; }
 
 .icon-facebook-sign:hover {
-  color: #dfdff; }
+  color: #dfdfdf; }
 
 .icon-twitter-sign {
   color: #efefef;
@@ -2027,7 +2023,7 @@ a:hover {
   opacity: 0.5; }
 
 .icon-twitter-sign:hover {
-  color: #dfdff; }
+  color: #dfdfdf; }
 
 div.band .columns {
   padding-top: 2em;
@@ -2072,21 +2068,46 @@ h1, h2, h3 {
   text-align: center; }
 
 .email {
+  position: relative;
   width: 80%; }
 
 #mc-embedded-subscribe {
   margin-top: 1em; }
 
+.invalid {
+  border: 2px solid #ea7373; }
+
+.loading {
+  background: white url("../loading.gif") right center no-repeat; }
+
+.success {
+  background: white url("../ok-circle.png") right center no-repeat; }
+
+.failure {
+  background: white url("../remove-circle.png") right center no-repeat; }
+
 .copyright {
   color: #fff; }
-
-#logo {
-  background-size: 100%; }
 
 @media only screen and (max-width: 767px) {
   #logo {
     background: url("../giggle_glide_logo_mobile.png") no-repeat center;
     height: 9em; } }
+@media only screen and (min-height: 1024px) {
+  #arrow_container {
+    padding-top: 70%; } }
+@media only screen and (min-height: 800px) and (max-height: 1023px) {
+  #arrow_container {
+    padding-top: 50%; } }
+@media only screen and (min-height: 600px) and (max-height: 799px) {
+  #arrow_container {
+    padding-top: 35%; } }
+@media only screen and (min-height: 600px) and (max-height: 799px) {
+  #arrow_container {
+    padding-top: 35%; } }
+@media only screen and (max-height: 599px) {
+  #arrow_container {
+    padding-top: 20%; } }
 header.band h1 {
   font-size: 3em;
   line-height: 1em;
@@ -2157,27 +2178,17 @@ footer {
 .last a {
   margin: 0 1em; }
 
-#arrow_container {
-  padding-top: 50%; }
-
-.social-tuts {
-  color: #E36316; }
-
-.social-dribbble {
-  color: #c5376d; }
-
-.social-facebook {
-  color: #3B5998; }
-
 .main_block {
   background-color: #216886;
   box-shadow: 6px 6px 3px #0f4462;
   color: white; }
 
 .hasPlaceholder {
-  color: #777; }
+  color: #e67575; }
 
-/*as we don't haver many media queries, we'll stick them all here*/
+.container {
+  width: 90% !important; }
+
 @media only screen and (min-width: 767px) {
   body {
     font-size: 1.125em;

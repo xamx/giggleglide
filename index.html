@@ -12,12 +12,226 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Favicons -->
 	<link rel="shortcut icon" href="favicon.ico" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 </head>
-<body >
-Giggle Glide
+<body  id="skrollr-body" >
+	
+	<header class="band" data-start="background-color:rgb(33, 152, 221);" data-end="background-color:rgb(33, 104, 134);">
+<div id="stars" data-start="background-position:0% 170%;" data-end="background-position:0% -60%;">
+<div id="back_clouds" data-start="background-position:0 0%;" data-end="background-position:0 10%;">
+<div id="back_hills"  data-start="background-position:0% 100%;" data-end="background-position:-20% 130%;">
+<div id="front_clouds">
+	<div id="front" data-start="background-position:0% 100%;" data-end="background-position:-50% 110%%;">
+		<div class="container">
+	
+			<div class="columns sixteen" data-0="opacity: 1" data-180="opacity: 0">
+						
+				<div id="logo"></div>
+			
+	      <a class="button" id="sign_up_button" href="#sign_up"  >SIGN UP FOR UPDATES</a>
+				<a class="button" href="/blog/">BLOG</a>
+			  <div id="arrow_container"><a id="arrow"  href="#dreams" data-menu-top="300" ><i class="icon-circle-arrow-down icon-2x"></i></a></div>
+			</div>	
+		
+		</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
+	</header>
+	<div class="band main">
+	
+		<div id="dreams"class="container main_block" data-start="opacity: 0;background-color:rgb(33,152,221);" data-180="opacity: 1;" data-end="background-color:rgb(33,104,134);" >
+			
+			<div class="columns twelve offset-by-two">
+			
+				<h3>The Dreams of a Squirrel</h3>
+
+        <p>Giggle, born amongst flying squirrels but without the natural ability to fy, is determined to prove the other squirrels wrong. Every squirrel can fly!</p>
+        <P>As the humble player, your duty is to help giggle's dreams become a reality and to show the world that with enough determination, resolve and belief, anything is possible.</p>
+
+        <p>Coming soon.</p>
+		    
+			
+			</div>
+
+		</div>
+	
+	</div>
+	
+	<div class="band main">
+	
+		<div class="container main_block" data-0="opacity: 0;background-color:rgb(33,152,221);" data-180="opacity: 1;" data-end="background-color:rgb(33,104,134);" >
+		
+			<hr>
+			
+			<div class="columns six offset-by-two" id="sign_up">
+			
+				<h3>Sign Up for Updates</h3>
+<!-- Begin MailChimp Signup Form -->
+<div id="sign_up_container">
+<form action="http://giggleglide.us7.list-manage.com/subscribe/post-json?u=a4ea35464f23e9162da0494db&id=e4f6a6879e&c=?" method="get"  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<input type="email"  placeholder="Email"  value="" name="EMAIL" class="required email" id="mce-EMAIL">
+<div >
+	<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+			
+			</div>
+		
+			<div class="columns six">
+			
+				<h3>Platforms</h3>
+				
+				<ul>
+          <li>iPhone</li>
+          <li>iPad</li>
+          <li>iPod Touch</li>
+        </ul>
+			
+			</div>
+
+		</div>
+	
+	</div>
+	
+	<footer class="band main">
+	
+		<hr>
+	
+		<div class="container">
+			
+			<div class="columns eight">			
+				
+				<p class="copyright">Copyright &copy; Giggle Glide 2013</p>
+			
+			</div>
+		
+			<div class="columns eight last">
+			
+				<p><a href="https://www.facebook.com/pages/Giggle-Glide/115636098627373"><i class="icon-facebook-sign icon-2x"></i></a> <a href="https://www.twitter.com/giggleglide"><i class="icon-twitter-sign icon-2x"></i></a></p>
+			
+			</div>
+		</div>
+	
+	</footer>		
+		
+
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script type="text/javascript" src="js/skrollr.menu.js"></script>
+	
+	<script type="text/javascript">
+
+var s = skrollr.init({
+		forceHeight: false
+	});
+
+skrollr.menu.init(s, {
+    animate: true,
+    easing: 'sqrt',  
+    duration: function(currentTop, targetTop) {  
+    return Math.abs(currentTop - targetTop) * 2;
+    },
+});
+
+
+$(document).ready( function () {
+
+
+
+
+    // I only have one form on the page but you can be more specific if need be.
+    var $form = $('form');
+
+    if ( $form.length > 0 ) {
+        $('form input[type="submit"]').bind('click', function ( event ) {
+            if ( event ) event.preventDefault();
+            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+            if ( isEmail($('#mce-EMAIL').val()) ) { register($form); }else{$('#mce-EMAIL').addClass('invalid');}
+        });
+    }
+});
+
+$("#sign_up_button").click(function(){
+    $("#mce-EMAIL").focus().delay( 800 );
+});
+
+ function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  var test = regex.test(email);
+  return test;
+}
+
+jQuery(function() {
+	jQuery.support.placeholder = false;
+	test = document.createElement('input');
+	if('placeholder' in test) jQuery.support.placeholder = true;
+});
+
+ $(function() {
+
+		var addEvent = function(elem, type, fn) { 
+    if (elem.addEventListener) elem.addEventListener(type, fn, false);
+    else if (elem.attachEvent) elem.attachEvent('on' + type, fn);
+  }
+
+  textField = document.getElementById('mce-EMAIL');
+	if(!jQuery.support.placeholder) { 
+  placeholder = 'Email';
+  textField.value = 'Email';
+  $('#mce-EMAIL').addClass('hasPlaceholder');
+}
+addEvent(textField, 'focus', function() {
+    if (this.value === 'Email'&&!jQuery.support.placeholder) {this.value = '';$('#mce-EMAIL').removeClass('hasPlaceholder');}
+  $('#mce-EMAIL').removeClass('invalid');
+ $('#mce-EMAIL').removeClass('success');
+ $('#mce-EMAIL').removeClass('failure');
+  
+});
+
+addEvent(textField, 'blur', function() {
+    if (this.value === ''&&!jQuery.support.placeholder) {
+  this.value = 'Email'; $('#mce-EMAIL').addClass('hasPlaceholder');
+  }else if(!isEmail(this.value)&&this.value != '')
+  {
+  $('#mce-EMAIL').addClass('invalid');
+  }
+});
+	
+
+});
+
+function register($form) {
+  $('#mce-EMAIL').removeClass('success');
+ $('#mce-EMAIL').removeClass('failure');
+   $('#mce-EMAIL').addClass('loading');
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("There seems to be a problem with the messenger squirrels, please try again later."); },
+        success     : function(data) {
+  $('#mce-EMAIL').removeClass('loading');
+            if (data.result != "success") {
+   $('#mce-EMAIL').addClass('failure');
+              
+            } else {
+               
+   $('#mce-EMAIL').addClass('success');
+            }
+        }
+    });
+}
+  </script>
+	
 </body>
 
 </html>
