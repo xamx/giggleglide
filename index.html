@@ -225,15 +225,15 @@ function register($form) {
         cache       : false,
         dataType    : 'json',
         contentType: "application/json; charset=utf-8",
-        error       : function(err) { alert("There seems to be a problem with the messenger squirrels, please try again later."); ga.push(['_trackEvent', 'signup', 'failure', 'landing_page', 5, false]); },
+        error       : function(err) { alert("There seems to be a problem with the messenger squirrels, please try again later."); ga('send', 'event', 'signup', 'failure', 'landing_page', 0);},
         success     : function(data) {
   $('#mce-EMAIL').removeClass('loading');
             if (data.result != "success") {
    $('#mce-EMAIL').addClass('failure');
-  ga.push(['_trackEvent', 'signup', 'failure', 'landing_page', 5, false]);
+  ga('send', 'event', 'signup', 'failure', 'landing_page', 0);
             } else {
    $('#mce-EMAIL').addClass('success');
-  ga.push(['_trackEvent', 'signup', 'success', 'landing_page', 5, false]);
+  ga('send', 'event', 'signup', 'success', 'landing_page', 5);
             }
         }
     });
